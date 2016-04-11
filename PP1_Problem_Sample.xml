@@ -1,0 +1,53 @@
+<problem>
+  <text>
+    <p>Create a method called PP1 that adds two numbers</p>
+  </text>
+<!-- The following is essential, "py-queue" is also set in the xqueue configuration
+and makes sure that this problem is forwarded to the appropriate queue to be graded -->
+  <coderesponse queuename="py-queue">
+    <textbox mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def PP1(x,y):
+	return x+y
+      </initial_display>
+      <answer_display>
+def PP1(x,y):
+    return x+y
+	</answer_display>
+    <grader_payload>
+<!-- This is also essential, it's the problem's name to be graded.
+Without it there will be no grading -->
+{"problem_name": "PP1"}
+	</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <table>
+    <tr>
+      <th>Input x</th>
+      <th>Input y</th>
+      <th>Expected</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+  </table>
+</problem>
+
