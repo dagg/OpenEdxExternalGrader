@@ -61,10 +61,9 @@ This will start the grader's HTTPServer which accepts the user's input, creates 
 
 You must leave the PythonGrader.py running, else the grader will stop.
 
-Some f the PythonGrader.py code is from https://github.com/huynq55/java-grader I mentioned above but I had to change it due to some problems:
-The JavaGrader created a single file with the student's answe (no matter what the problem or the student was) and so, if 2 students tried to answer at the same time at different problems, the grader was confusing the results (since it tested the code from the same file for all students).
-For that reason, I create a different file for each time each student answers, with a random filename, and then test this particular file for its validity and correctness.
+Some of the PythonGrader.py code is from https://github.com/huynq55/java-grader I mentioned above but I had to change it due to some problems:
+The JavaGrader created a single file with the student's answers (no matter what the problem or the student was) and so, if 2 students tried to answer at the same time at different (or the same) problems, the grader was confusing the results (since it tested the code from the same file for all students).
+For that reason, I create a different file for each time each student answers, with a random filename, and then run a test for this particular file for its validity and correctness.
 After the file is read and the result is ready to be sent back to the platform, I delete the file so it will not take up too much space on disk.
 
-
-That's all for now, I hope this was helpful and if someone has a better idea I will be glad to see it, or answer any questions you might have.
+That's all for now, I hope this was helpful and if someone has a better idea on how to make this work more efficiently I will be glad to see it, or answer any questions you might have.
