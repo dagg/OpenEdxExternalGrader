@@ -21,7 +21,10 @@ You can also download directly the "PP1_Problem_Sample.xml" file, which is the "
 
 XQueue configuration:
 Edit the "/edx/app/xqueue/xqueue.env.json" file to look like this:
+(Remeber to open this file as a 'xqueue' user)
 ```
+$ sudo -H -u xqueue vim /edx/app/xqueue/xqueue.env.json
+
 {
     "LOCAL_LOGLEVEL": "INFO",
     "LOGGING_ENV": "sandbox",
@@ -44,7 +47,8 @@ Edit the "/edx/app/xqueue/xqueue.env.json" file to look like this:
     "XQUEUE_WORKERS_PER_QUEUE": 12
 }
 ```
-The "py-queue": "http://localhost:1710" line is the most important here, as the xqueue will look for the grader at the port 1710 (you can use any port you like of course as long as you use the same to initialize the HTTPServer in the PythonGrader.py program). Also, "py-queue" is the queue name used in each problem's xml to declare which queue to follow (you can see it in here: "PP1_Problem_Sample.xml").
+The "py-queue": "http://localhost:1710" line is the most important here, as the xqueue will look for the grader at the port 1710 (you can use any port you like of course as long as you use the same to initialize the HTTPServer in the PythonGrader.py program). 
+Also, "py-queue" is the queue name used in each problem's xml to declare which queue to follow (you can see it in here: "PP1_Problem_Sample.xml").
 
 After editing the "/edx/app/xqueue/xqueue.env.json" file, you need to restart the xqueue server using the following command:
 ```
