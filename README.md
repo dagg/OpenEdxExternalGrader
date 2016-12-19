@@ -52,7 +52,7 @@ Also, "py-queue" is the queue name used in each problem's xml to declare which q
 
 After editing the "/edx/app/xqueue/xqueue.env.json" file, you need to restart the xqueue server using the following command:
 ```
-sudo /edx/bin/supervisorctl restart xqueue:
+$ sudo /edx/bin/supervisorctl restart xqueue:
 ```
 This didn't quite work for me though and I had to restart the whole server for some reason (or all the running services, it's the same), and then it seemd to work correctly.
 
