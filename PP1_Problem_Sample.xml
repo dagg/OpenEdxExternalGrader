@@ -15,9 +15,9 @@ def PP1(x,y):
 def PP1(x,y):
     return x+y
 	</answer_display>
-    <grader_payload>
-<!-- This is also essential, it's the problem's name to be graded.
+<!-- The following is also essential, it's the problem's name to be graded.
 Without it there will be no grading -->
+	<grader_payload>
 {"problem_name": "PP1"}
 	</grader_payload>
     </codeparam>
