@@ -60,6 +60,10 @@ Then, go to the directory in your server where you have cloned my grader files f
 ```
 $ python PythonGrader.py
 ```
+_Python3Grader.py added for those who use python 3.x instead of python 2.x so in this case just run:_
+```
+$ python3 Python3Grader.py
+```
 
 This will start the grader's HTTPServer which accepts the user's input, creates a unique file with the answer, runs the appropriate unit test (using Pytest) to check if the problem is correct, and responds back to the xqueue (and then to OpenEDX) with an answer, either correct or not, for grading the student's response.
 
@@ -71,3 +75,5 @@ For that reason, I create a different file for each time each student answers, w
 After the file is read and the result is ready to be sent back to the platform, I delete the file so it will not take up too much space on disk.
 
 That's all for now, I hope this was helpful and if someone has a better idea on how to make this work more efficiently I will be glad to see it, or answer any questions you might have.
+
+
