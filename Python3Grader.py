@@ -42,6 +42,7 @@ def grade(problem_name, student_response):
     # Create python file to be tested from student's submitted program
     program_name = "Program{0}_{1}.py".format(problem_name['problem_name'], randfilename)
     source_file = open(program_name, 'w')
+    source_file.write("# -*- coding: utf-8 -*-\n")
     source_file.write(student_response)
     source_file.close()
 
